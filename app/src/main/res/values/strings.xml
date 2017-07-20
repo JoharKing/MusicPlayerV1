@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">RnDPlayer</string>
+    <string name="tip_reach_top">到顶啦</string>
+    <string name="tip_reach_bottom">到底啦</string>
+    <string name="tip_no_music_file">没有找到音乐,请搞几首再说</string>
+
+    <!-- 菜单选项 -->
+    <string name="theme">主题</string>
+    <string name="sleepmode">睡眠模式</string>
+    <string name="about">关于</string>
+    <string name="about2">Wulalala，考核小程序，完成了基本音乐播放功能，实现后台播放，切换主题。
+        若有Bug，多多包涵。</string>
+    <string name="quit">退出</string>
+    <string name="quit_message">爱我，别走...</string>
+
+    <!-- 睡眠模式选项 -->
+    <string name="playmode">播放模式</string>
+    <string name="sequence">顺序播放</string>
+    <string name="listcycle">列表循环</string>
+    <string name="singlecycle">单曲循环</string>
+    <string name="randomplay">随机播放</string>
+
+
+</resources>

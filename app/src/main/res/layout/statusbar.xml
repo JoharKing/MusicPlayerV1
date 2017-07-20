@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_notice_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_vertical"/>
+    <LinearLayout
+        android:id="@+id/layout_notic_msg"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <!-- 音乐名 -->
+        <TextView
+            android:id="@+id/tv_notice_musicname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:text=""/>
+        <!-- 专辑信息，歌手 -->
+        <TextView
+            android:id="@+id/tv_notice_musicartist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_notice_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <!-- 上一首 -->
+        <ImageButton
+            android:id="@+id/ibt_notice_previous"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_previous"/>
+        <!-- 暂停/播放 -->
+        <ImageButton
+            android:id="@+id/ibt_notice_play"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_play"/>
+        <ImageButton
+            android:id="@+id/ibt_notice_pause"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_pause"/>
+        <!-- 下一首 -->
+        <ImageButton
+            android:id="@+id/ibt_notice_next"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_next"/>
+
+        <ImageButton
+            android:id="@+id/ibt_notice_close"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_close"/>
+    </LinearLayout>
+</LinearLayout>

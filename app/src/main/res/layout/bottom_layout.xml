@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="64dp"
+    android:layout_alignParentBottom="true"
+    android:paddingBottom="0dp"
+    android:background="#63b1e2"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/ibt_bottom_album"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/bg_bottom_album"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_begin"
+            android:layout_toLeftOf="@+id/tv_end"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+            <com.example.musicplayerv1.widget.MarqueeTextView
+                android:id="@+id/tv_play_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/sb_bottom_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="0dp">
+            <TextView
+                android:id="@+id/tv_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="00:00"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"/>
+            <ImageView
+                android:id="@+id/iv_sleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_sleepmode"
+                android:background="@drawable/ic_sleepmode"
+                android:layout_toRightOf="@id/tv_begin"/>
+            <TextView
+                android:id="@+id/tv_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="00:00"
+                android:textColor="#ffffff"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/ibt_bottom_play"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:background="@drawable/button_play"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/ibt_bottom_next"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/button_next"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/ibt_bottom_play" />
+    </RelativeLayout>
+
+</LinearLayout>
